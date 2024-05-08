@@ -185,7 +185,7 @@ if a % 2 == 0:
 else:
     print(f"El valor de a es: {a} es un número IMPAR")
 '''
-
+'''
 print("*******************************")
 print("EJERCICIO DE ES MAYOR")
 print("*******************************")
@@ -196,3 +196,97 @@ if edadPersona >= edadAdulto:
     print(f"Su edad es: {edadAdulto} es mayor de edad")
 else:
     print(f"Su edad es: {edadAdulto} es menor de edad")
+'''
+'''
+print("*******************************")
+print("OPERADORES LOGICOS")
+print("*******************************")
+
+a = False
+b = True
+
+resultado = a or b
+print(resultado)
+
+
+resultado = a and b
+print(resultado)
+
+a = not a
+print(resultado)
+'''
+'''
+print("*******************************")
+print("EJERCICIO DENTRO DE RANGO")
+print("*******************************")
+
+valor = int(input("Digite un numero dentro del rango del 0 al 5"))
+valorMinimo = 0
+valorMaximo = 5
+dentroRango = (valor >= valorMinimo and valor <= valorMaximo)
+if dentroRango:
+    print(f"El valor {valor} está dentro del rango")
+else:
+    print(f"El valor {valor} No está dentro del rango")
+'''
+'''
+print("*******************************")
+print("EJERCICIO DE OPERADOR OR, NOT")
+print("*******************************")
+
+vacaciones = False
+diaDescanso = True
+if not(vacaciones or diaDescanso):
+    print("Tiene trabajo que hacer")
+else:
+    print("Puede ir al juego")
+'''
+'''
+print("*******************************")
+print("EJERCICIO DE RANGO ENTRE 20 Y 30 ")
+print("*******************************")
+
+edad = int(input("Digite su edad: "))
+veinte = edad >= 20 and edad < 30
+print(veinte)
+treinta = edad >= 30 and edad < 40
+print(treinta)
+
+if veinte or treinta:
+    print("Estas dentro del rango de los (20\'0) a (30\'0) años ")
+else:
+    print("No Estas dentro del rango de los (20\'0) a (30\'0) años ")
+'''
+'''
+numero1 = int(input("Digite el valor para el numero1: "))
+numero2 = int(input("digite el valor para el numero2: "))
+
+if numero1 > numero2:
+    print("El numero 1 es mayor")
+else:
+    print("El numero 2 es mayor")
+'''
+print("*******************************")
+print("EJERCICIO TIENDA DE LIBROS ")
+print("*******************************")
+
+print("Digite los siguientes datos del libro")
+nombre = input("Digite el nombre del libro:")
+id = int(input("Digite el ID del libro"))
+precio = float(input("Digite el precio del libro"))
+envioGratuito = input("Indicar si el libro es gratuito (True/False)")
+
+if envioGratuito == "True":
+    envioGratuito = True
+elif envioGratuito == "False":
+    envioGratuito = False
+else:
+    envioGratuito = "El valor de incorrecto, debe escribir True/False"
+
+print(f'''
+        nombre: {nombre}
+        id: {id}
+        precio: {precio}
+        envío Gratuito {envioGratuito}
+'''
+    )
