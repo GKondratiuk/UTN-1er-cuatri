@@ -266,6 +266,7 @@ if numero1 > numero2:
 else:
     print("El numero 2 es mayor")
 '''
+
 print("*******************************")
 print("EJERCICIO TIENDA DE LIBROS ")
 print("*******************************")
