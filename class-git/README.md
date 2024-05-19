@@ -3,9 +3,7 @@
 
 >Lo que vimos en la clase anterior:
 <sub>
-
 Abrimos la terminal de Git Bash en Window o la terminal de Ubuntu, tambien la terminal de Mac, y comenzamos con los siguientes comandos y creación de directorios
-
 </sub>
 
 ```sh
@@ -25,8 +23,9 @@ cd /D #Cambiamos de disco en window
 df -h #Muestra todos los directorios en Ubuntu
 cd /mnt/d #Cambia de directorio usando WSL Ubuntu en window
 ```
-
-## AHORA COMENZAMOS CON LA CREACIÓN DE CARPETAS
+<sub>
+AHORA COMENZAMOS CON LA CREACIÓN DE CARPETAS
+</sub>
 
 ```sh
 cd ..
@@ -124,12 +123,13 @@ mkdir class-git #Creamos la carpeta o directorio para trabajar en Git local por 
 cd class-git #Entramos para crear el README.md para este sector.
 touch README.md #Vamos a crear un archivo nuevo, md significa markdown y se pueden trabajar con editores de texto, este es un lenguaje que transforma el texto a html.
 ```
+<sub>
 Enlace a la documentación en GitHub de MARKDOWN
 
-## Leemos la documentación para ir creando en README.md como lo enseña GitHub.
+ Leemos la documentación para ir creando en README.md como lo enseña GitHub.
 
 code . #Abrimos VSC para editar el archivo.
-
+</sub>
 ## Empezamos a cargar lo visto en las clases anteriores (Comandos) en el README y pasamos a commitear
 
 ```sh
@@ -246,7 +246,7 @@ Hoy a sido un poco de teoría, repaso de todo lo que les dió la profe Naty.
 Profesor Ariel Betancud
 
 
-CLASE 6 MIÉRCOLES 15 DE MAYO DEL 2024
+### CLASE 6 MIÉRCOLES 15 DE MAYO DEL 2024
 
 Git reset vs. Git rm parte 7
 
@@ -269,52 +269,37 @@ Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hace
 
 TAREA -> AGREGAR LOS COMENTARIOS EN LOS COMANDOS, PARA SABER QUE PASA CON CADA UNO.
 
+```sh
+
 cd tecnicatura
-
 cd class-git
-
 ls
-
 mkdir git_reset_test #Vamos a hacer pruebas, es por esto que creamos una carpeta nueva
-
 cd git_reset_test #Entramos en la carpeta
-
 git init #Inicializamos el repositorio
-
 touch reset_file.txt
-
 git add reset_file.txt
-
 git commit -m"Iniciando el primer commit"
 
-
 ¿Cómo funciona Git Reset en tu flujo de trabajo? 
-
 Git reset permite moverte entre diferentes commits para deshacer o rehacer cambios. Git guarda todo lo nuevo del repositorio como commits, que son instantáneas del estado del código en un momento dado y existen variaciones de este comando.
-
 Variaciones de Git Reset 
-
 git reset --soft: Borra el historial y los registros de Git de commits anteriores, pero guarda los cambios en Staging para aplicar las últimas actualizaciones a un nuevo commit. 
-
 git reset --hard: Deshace todo, absolutamente todo. Toda la información de los commits y del área de staging se elimina del historial. 
-
 git reset --mixed: Borra todo, exactamente todo. Toda la información de los commits y del área de staging se elimina del historial. 
-
 git reset HEAD: El comando git reset saca archivos del área de staging sin borrarlos ni realizar otras acciones. Esto impide que los últimos cambios en estos archivos se envíen al último commit. Podemos incluirlos de nuevo en staging con git add si cambiamos de opinión. Ten en cuenta que, si deshaces commits en un repositorio compartido en GitHub, estarás cambiando su historia y esto puede causar problemas de sincronización con otros colaboradores.
-
 ¿Qué es git reset HEAD? 
-
 git reset HEAD es un comando que te permite revertir los cambios que ya habías preparado para subir, y moverlos de vuelta a tu proyecto. Con este comando puedes cancelar los cambios que ya habías agregado, para que puedas revisarlos, modificarlos o deshacerlos antes de confirmarlos con un commit.
-
 git rm Por otro lado, es un comando que nos ayuda a eliminar archivos de Git sin eliminar su historial del sistema de versiones. Para recuperar el archivo eliminado, necesitamos retroceder en la historia del proyecto, recuperar el último commit y obtener la última confirmación antes de la eliminación del archivo.
+```
 
 Es importante tener en cuenta que git rm no puede usarse sin evaluarlo antes. Debemos usar uno de los flags siguientes para indicarle a Git cómo eliminar los archivos que ya no necesitamos en la última versión del proyecto.
 
 Variaciones de Git rm
-
+```sh
 git rm --cached: Elimina archivos del repositorio local y del área de staging, pero los mantiene en el disco duro. Deja de trackear el historial de cambios de estos archivos, por lo que quedan en estado untracked, que significa: que un archivo no está siendo rastreado por Git
-
 git rm --force: Elimina los archivos de Git y del disco duro. Git guarda todo, por lo que podemos recuperar archivos eliminados si es necesario (empleando comandos avanzados). ¡Al usar git rm lo que haremos será eliminar este archivo completamente de git!
+```
 
 ¿Cuál es la diferencia entre git rm y git reset Head? 
 
