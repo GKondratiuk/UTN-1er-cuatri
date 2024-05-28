@@ -16,3 +16,23 @@ console.log(juntos);
 
 nombre += apellido;
 console.log(nombre);
+
+let nombre2 = "Pedro";
+console.log(nombre2);
+
+const apellido2 = "Lepes";
+//apellido2 = "peres"; una constante no puede ser modificada
+console.log(apellido2);
+
+//SIMILITUDES CON JAVA
+
+let x,y //Se puede crear varias variables dentro de una misma linea
+x = 17, y = 21;//Se pueden hacer asignaciones varias dentro de la misma linea
+let z = x + y; //Se asigna el valor de la operacion
+console.log(z);
+
+let _1num = 34; //no utilizar numeros para iniciar el nombre de una variable
+let rompiendo = "rompe" // no utilizar palabras reservadas para variables
+
+console.log(_1num);
+console.log(rompiendo);

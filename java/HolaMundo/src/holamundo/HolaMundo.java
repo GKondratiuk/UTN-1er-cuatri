@@ -205,6 +205,7 @@ public class HolaMundo {
      
      //CONVERSIÓN DE TIPOS PRIMITIVOS EN JAVA PARTE 2
      
+     /*
      var edadTexto = String.valueOf(10);
         System.out.println("edadTexto = " + edadTexto);
     
@@ -214,6 +215,53 @@ public class HolaMundo {
         System.out.println("Digite un caracter");
         fraseChar = entrada.nextLine().charAt(0); //toma 1 caracter de la palabra
         System.out.println("fraseChar = " + fraseChar);
+*/
+     /*
+     int num1 = 5, num2 = 4;
+     var solucion = num1 + num2;     
+        System.out.println("solucion suma = " + solucion);
+        
+        solucion = num1 - num2;     
+        System.out.println("solucion resta = " + solucion);
+        
+        solucion = num1 * num2;     
+        System.out.println("solucion multiplicacion = " + solucion);
+        
+        solucion = num1 / num2;     
+        System.out.println("solucion division = " + solucion);
+        
+        var solucion2 = 3.4 / num2;
+        System.out.println("resultado de la division " + solucion2);
+        
+        solucion = num1 % num2; //Guarda el residuo entero de la division 
+        System.out.println("solucion = " + solucion);
+        
+        if(num2 % 2 == 0)
+            System.out.println("es par");
+        else
+            System.out.println("Es un numero impar");
+        
+        */
+     
+     int varNum1 = 1, varNum2 = 4;
+     int varNum3 = varNum1 + 6 - varNum2;
+        System.out.println("varNum3 = " + varNum3);
+        
+        varNum1 += 1; // Es igual a decir: varNum1 = varNUm1 + 1;
+        System.out.println("varNum1 = " + varNum1);
+        
+            varNum2 -= 2; // Es igual a decir: varNum1 = varNUm1 + 1;
+        System.out.println("varNum2 = " + varNum2);
+        
+            varNum1 *= 5; // Es igual a decir: varNum1 = varNUm1 + 1;
+        System.out.println("varNum1 = " + varNum1);
+        
+            varNum1 /= 4; // Es igual a decir: varNum1 = varNUm1 + 1;
+        System.out.println("varNum3 = " + varNum3);
+        
+            varNum1 %= 6; // Es igual a decir: varNum1 = varNUm1 + 1;
+        System.out.println("varNum1 = " + varNum1);
+        
     }
     
 }
