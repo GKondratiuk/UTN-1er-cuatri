@@ -36,3 +36,11 @@ let rompiendo = "rompe" // no utilizar palabras reservadas para variables
 
 console.log(_1num);
 console.log(rompiendo);
+
+//hoy ya no se usa var, se utiliza let o const
+let nombre3 = "Pedro"; //literl tipo string
+console.log(nombre3)
+
+const apellido3 = "Lepes"
+//apellido3 = "perez" - una constante no puede ser modificada 
+console.log(apellido3)
