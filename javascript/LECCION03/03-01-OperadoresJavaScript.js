@@ -44,3 +44,27 @@ let numero = 2;
 resultado2 = numero % 2 == 0 ? "Es un numero PAR" : "Es un numero IMPAR"
 
 console.log(resultado2)
+
+//CONVERTIR STRING A NUMBER
+
+let miNumero = "10x";
+console.log(typeof miNumero);
+let edad2 = Number(miNumero);
+console.log(typeof edad2);
+
+if(isNaN(edad2)){
+    console.log("La variable no contiene solo numeros")
+}
+else{
+    if(edad2 >= 18){
+        console.log("Podes votar");
+    }else{
+        console.log("No podes votar")
+    }
+}
+
+
+let resultado3 = edad2 >= 18 ? "Podes votar" : "No podes votar"
+console.log(resultado3);
+
+//FUNCION isNaN

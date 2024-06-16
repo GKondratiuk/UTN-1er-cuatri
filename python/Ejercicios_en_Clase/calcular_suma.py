@@ -1,0 +1,1 @@
+#calcular la suma de "n" primeros numeros
