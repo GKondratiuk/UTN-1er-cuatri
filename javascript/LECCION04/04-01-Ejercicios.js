@@ -42,3 +42,43 @@ const fechaNacimiento = 1992;
 console.log(fechaNacimiento);
 //fechaNacimiento = 2006; ESTO TIRA ERROR
 //console.log(fechaNacimiento); ESTO TIRA ERROR
+
+//Evitar repetir tu código
+//Dry don't repeat yourself
+//let days = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]
+let days = 1;
+switch(days){
+    case 1:
+        console.log("Hoy es Lunes");
+        break;
+    case 2:
+        console.log("Hoy es Martes");
+        break;
+    case 3:
+        console.log("Hoy es Miercoles");
+        break;
+    case 4:
+        console.log("Hoy es Jueves");
+        break;
+    case 5:
+        console.log("Hoy es Viernes");
+        break;
+    case 6:
+        console.log("Hoy es Sabado");
+        break;
+    case 7:
+        console.log("Hoy es Domingo");
+        break;
+    default:
+        console.log("Error en el ingreso");
+        break;
+}
+let days2 = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]
+function getDay(n){
+    if(n < 1 || n > 7){
+        throw new Error("out of range");
+    }
+    return days2[n-1];
+}
+
+console.log(getDay(5));

@@ -8,7 +8,7 @@ if obtener_Estacion == 1 or obtener_Estacion == 2 or obtener_Estacion == 3:
     print("verano")
 elif obtener_Estacion == 4 or obtener_Estacion == 5 or obtener_Estacion == 6:
     print("Otoño")
-elif obtener_Estacion == 7 or obtener_Estacion == 8 or obtener_Es4tacion == 9:
+elif obtener_Estacion == 7 or obtener_Estacion == 8 or obtener_Estacion == 9:
     print("Invierno")
     
 elif obtener_Estacion == 10 or obtener_Estacion == 11 or obtener_Estacion == 12:
